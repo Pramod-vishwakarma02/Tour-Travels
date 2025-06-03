@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>signin/signup</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+
+        <style>
+    body {
+      background-color: #f8f9fa;
+    }
+    .card {
+      border-radius: 15px;
+    }
+    .nav-tabs .nav-link.active {
+      background-color: #0d6efd;
+      color: #fff;
+    }
+  </style>
+
+    </head>
+
+    <body>
+        <header>
+            <!-- place navbar here -->
+             <nav class="navbar bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="assets/logo1.jpg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+      Tour&Travels
+    </a>
+  </div>
+</nav>
+        </header>
+        <main>
+<div class="container py-5">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card shadow">
+          <div class="card-header text-center">
+            <ul class="nav nav-tabs card-header-tabs" id="authTabs" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="signin-tab" data-bs-toggle="tab" data-bs-target="#signin" type="button" role="tab">Sign In</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="signup-tab" data-bs-toggle="tab" data-bs-target="#signup" type="button" role="tab">Sign Up</button>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body tab-content">
+            <!-- Sign In Form -->
+            <div class="tab-pane fade show active" id="signin" role="tabpanel">
+              <form>
+                <div class="mb-3">
+                  <label for="signinEmail" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="signinEmail" placeholder="Enter email">
+                </div>
+                <div class="mb-3">
+                  <label for="signinPassword" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="signinPassword" placeholder="Password">
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Sign In</button>
+              </form>
+            </div>
+
+            <!-- Sign Up Form -->
+            <div class="tab-pane fade" id="signup" role="tabpanel">
+              <form>
+                <div class="mb-3">
+                  <label for="signupName" class="form-label">Full Name</label>
+                  <input type="text" class="form-control" id="signupName" placeholder="Enter full name">
+                </div>
+                <div class="mb-3">
+                  <label for="signupEmail" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="signupEmail" placeholder="Enter email">
+                </div>
+                <div class="mb-3">
+                  <label for="signupPassword" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="signupPassword" placeholder="Create password">
+                </div>
+                <div class="mb-3">
+                  <label for="signupConfirmPassword" class="form-label">Confirm Password</label>
+                  <input type="password" class="form-control" id="signupConfirmPassword" placeholder="Confirm password">
+                </div>
+                <button type="submit" class="btn btn-success w-100">Sign Up</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+        </main>
+        <footer>
+            <!-- place footer here -->
+        </footer>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
