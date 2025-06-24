@@ -339,6 +339,39 @@ nav li:last-child a:after{ background: #1abc9c; }
 
 
 
+            .hover-underline {
+  font-size: 2rem;
+  color: #ffffff;
+  position: relative;
+  display: inline-block;
+}
+
+.hover-underline::after,
+.hover-underline::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, #ff0000, #00ffff);
+  bottom: -5px;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s ease-out;
+}
+
+.hover-underline::before {
+  top: -5px;
+  transform-origin: left;
+}
+
+.hover-underline:hover::after,
+.hover-underline:hover::before {
+  transform: scaleX(1);
+}
+
+
+
     </style>
 
 
@@ -388,6 +421,7 @@ nav li:last-child a:after{ background: #1abc9c; }
     </header>
     <main>
 
+        <div class="container-fluid">
         <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
             <div class="carousel-inner">
                 <div class="carousel-container">
@@ -416,6 +450,7 @@ nav li:last-child a:after{ background: #1abc9c; }
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
+        </div>
         </div><br><br>
 
         <main>
@@ -487,81 +522,79 @@ nav li:last-child a:after{ background: #1abc9c; }
         </div><br><br>
 
 
-        <h2 style="text-align: center;font-family: Arial, Helvetica, sans-serif; text-decoration: underline;">Top
-            Destinations</h2><br><br>
+        <div class="hover-underline" ><a href="Destinations.html" type="btn" style="text-align: center; margin-left: 650px;">Explore More</a></div><br><br>
 
 
         <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col">
-                <div class="card h-80">
-                    <img src="assets/image1.jpg" class="card-img-top" alt="image" loading="lazy">
-                    <div class="card-body">
-                        <h5 class="card-title" style="text-align: center;"><a href="waterfall.html" type="button"
-                                class="btn" style="text-decoration: underline;">waterfall</a></h5>
-
-                    </div>
-
-
-                </div>
+                 <div class="container">  
+    <div class="holographic-card" style="margin-left: 50px;">
+        <img src="assets/image1.jpg" class="card-img-top" alt="..." loading="lazy">
+    </div>
+    <a href="waterfall.html" type="button"
+                                class="btn btn-outline-blue" style="margin-left: 150px;">waterfall</a>
+                  </div>
+  
             </div>
 
 
             <div class="col">
-                <div class="card h-80">
-                    <img src="assets/image2.jpg" class="card-img-top" alt="..." loading="lazy">
-                    <div class="card-body">
-                        <h5 class="card-title" style="text-align: center;"><a href="delhi.html" type="button"
-                                class="btn" style="text-decoration: underline;">delhi</a></h5>
-
-                    </div>
-
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-80">
-                    <img src="assets/image3.jpg" class="card-img-top" alt="..." loading="lazy">
-                    <div class="card-body">
-                        <h5 class="card-title" style="text-align: center;"><a href="ladakh.html" type="button"
-                                class="btn" style="text-decoration: underline;">ladakh</a></h5>
-
-                    </div>
-
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-80">
-                    <img src="assets/image4.jpg" class="card-img-top" alt="..." loading="lazy">
-                    <div class="card-body">
-                        <h5 class="card-title" style="text-align: center;"><a href="punjab.html" type="button"
-                                class="btn" style="text-decoration: underline;">punjab</a></h5>
-
-                    </div>
-
-                </div>
+                 <div class="container">  
+    <div class="holographic-card" style="margin-left: 50px;">
+        <img src="assets/image2.jpg" class="card-img-top" alt="..." loading="lazy">
+    </div>
+    <a href="delhi.html" type="button"
+                                class="btn btn-outline-blue" style="margin-left: 150px;">Delhi</a>
+                  </div>
+  
             </div>
 
+
             <div class="col">
-                <div class="card h-80">
-                    <img src="assets/image5.jpg" class="card-img-top" alt="..." loading="lazy">
-                    <div class="card-body">
-                        <h5 class="card-title" style="text-align: center;"><a href="amritsar.html" type="button"
-                                class="btn" style="text-decoration: underline;">Amritsar</a></h5>
+                 <div class="container">  
+    <div class="holographic-card" style="margin-left: 50px;">
+        <img src="assets/image3.jpg" class="card-img-top" alt="..." loading="lazy">
+    </div>
+    <a href="ladakh.html" type="button"
+                                class="btn btn-outline-blue" style="margin-left: 150px;">ladakh</a>
+                  </div>
+  
+            </div>
 
-                    </div>
 
-                </div>
+            <div class="col">
+                  <div class="container">  
+    <div class="holographic-card" style="margin-left: 50px;">
+        <img src="assets/image4.jpg" class="card-img-top" alt="..." loading="lazy">
+    </div>
+    <a href="punjab.html" type="button"
+                                class="btn btn-outline-blue" style="margin-left: 150px;">Punjab</a>
+                  </div>
+  
+
+                
             </div>
 
             <div class="col">
-                <div class="card h-80">
-                    <img src="assets/image6.jpg" class="card-img-top" alt="..." loading="lazy">
-                    <div class="card-body">
-                        <h5 class="card-title" style="text-align: center;"><a href="kedarnath.html" type="button"
-                                class="btn" style="text-decoration: underline;">Kedarnath</a></h5>
+                 <div class="container">  
+    <div class="holographic-card" style="margin-left: 50px;">
+        <img src="assets/image5.jpg" class="card-img-top" alt="..." loading="lazy">
+    </div>
+    <a href="amritsar.html" type="button"
+                                class="btn btn-outline-blue" style="margin-left: 150px;">Amritsar</a>
+                  </div>
+  
+            </div>
 
-                    </div>
-
-                </div>
+            <div class="col">
+                 <div class="container">  
+    <div class="holographic-card" style="margin-left: 50px;">
+        <img src="assets/image6.jpg" class="card-img-top" alt="..." loading="lazy">
+    </div>
+    <a href="kedarnath.html" type="button"
+                                class="btn btn-outline-blue" style="margin-left: 150px;">Kedarnath</a>
+                  </div>
+  
             </div>
         </div><br><br>
 
